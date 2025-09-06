@@ -1,0 +1,41 @@
+/* Global dark mode */
+body {
+  background-color: #000000;   /* pure black background */
+  color: #ffffff;              /* white text */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
+  color: #00ffcc; /* neon cyan headings */
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #ffcc00; /* yellow links */
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* Lists */
+ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+/* Box around main content */
+body > * {
+  max-width: 800px;
+  margin: auto;
+  background: #111111;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+}
