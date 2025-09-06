@@ -7,34 +7,115 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>🔒 Privacy Policy – idkbot</h1>
-  <p><strong>Last updated:</strong> September 5, 2025</p>
-
-  <h2>1. Data Collected</h2>
-  <ul>
-    <li><strong>Messages & Commands:</strong> idkbot may temporarily process the messages/commands you send in order to respond.</li>
-    <li><strong>Server/Channel IDs:</strong> stored only if needed for settings.</li>
-    <li><strong>User IDs:</strong> may be logged for moderation or usage features.</li>
-  </ul>
-
-  <h2>2. Data Not Collected</h2>
-  <p>idkbot does not collect personal info like emails, passwords, or IP addresses.</p>
-
-  <h2>3. Data Storage</h2>
-  <p>Minimal data is stored only to keep idkbot working. Data may be reset or deleted at any time.</p>
-
-  <h2>4. Data Removal</h2>
-  <p>You can request deletion, or remove idkbot from your server to clear settings.</p>
-
-  <h2>5. Updates</h2>
-  <p>This policy may be updated at any time. Major updates will be announced if possible.</p>
-
-  <p><a href="index.html">⬅ Back to Home</a></p>
-</body>
+  <!-- Navbar -->
   <nav>
-  <a href="index.html">🏠 Home</a>
-  <a href="tos.html">📜 Terms of Service</a>
-  <a href="privacy.html">🔒 Privacy Policy</a>
-</nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="tos.html">📜 Terms of Service</a>
+    <a href="privacy.html">🔒 Privacy Policy</a>
+  </nav>
 
+  <!-- Glowing Logo -->
+  <header>
+    <h1 class="logo">idkbot</h1>
+  </header>
+
+  <!-- Language Selector -->
+  <div class="lang-select">
+    <label for="language">🌍 Language:</label>
+    <select id="language">
+      <option value="en" selected>English</option>
+      <option value="sv">Swedish</option>
+      <option value="pt">Brazilian Portuguese</option>
+    </select>
+  </div>
+
+  <!-- Main Content -->
+  <main id="privacy-content">
+    <!-- Default English -->
+    <h2>🔒 Privacy Policy</h2>
+    <p><strong>Last updated:</strong> September 5, 2025</p>
+    <h3>1. Data Collected</h3>
+    <ul>
+      <li><strong>Messages & Commands:</strong> idkbot may temporarily process the messages/commands you send in order to respond.</li>
+      <li><strong>Server/Channel IDs:</strong> stored only if needed for settings.</li>
+      <li><strong>User IDs:</strong> may be logged for moderation or usage features.</li>
+    </ul>
+    <h3>2. Data Not Collected</h3>
+    <p>idkbot does not collect personal info like emails, passwords, or IP addresses.</p>
+    <h3>3. Data Storage</h3>
+    <p>Minimal data is stored only to keep idkbot working. Data may be reset or deleted at any time.</p>
+    <h3>4. Data Removal</h3>
+    <p>You can request deletion, or remove idkbot from your server to clear settings.</p>
+    <h3>5. Updates</h3>
+    <p>This policy may be updated at any time. Major updates will be announced if possible.</p>
+  </main>
+
+  <!-- Language Switcher Script -->
+  <script>
+    const privacyTexts = {
+      en: `
+        <h2>🔒 Privacy Policy</h2>
+        <p><strong>Last updated:</strong> September 5, 2025</p>
+        <h3>1. Data Collected</h3>
+        <ul>
+          <li><strong>Messages & Commands:</strong> idkbot may temporarily process the messages/commands you send in order to respond.</li>
+          <li><strong>Server/Channel IDs:</strong> stored only if needed for settings.</li>
+          <li><strong>User IDs:</strong> may be logged for moderation or usage features.</li>
+        </ul>
+        <h3>2. Data Not Collected</h3>
+        <p>idkbot does not collect personal info like emails, passwords, or IP addresses.</p>
+        <h3>3. Data Storage</h3>
+        <p>Minimal data is stored only to keep idkbot working. Data may be reset or deleted at any time.</p>
+        <h3>4. Data Removal</h3>
+        <p>You can request deletion, or remove idkbot from your server to clear settings.</p>
+        <h3>5. Updates</h3>
+        <p>This policy may be updated at any time. Major updates will be announced if possible.</p>
+      `,
+      sv: `
+        <h2>🔒 Integritetspolicy</h2>
+        <p><strong>Senast uppdaterad:</strong> 5 september 2025</p>
+        <h3>1. Insamlad data</h3>
+        <ul>
+          <li><strong>Meddelanden & kommandon:</strong> idkbot kan tillfälligt behandla de meddelanden/kommandon du skickar för att svara.</li>
+          <li><strong>Server-/kanal-ID:n:</strong> lagras endast om det behövs för inställningar.</li>
+          <li><strong>Användar-ID:n:</strong> kan loggas för moderering eller användningsfunktioner.</li>
+        </ul>
+        <h3>2. Data som inte samlas in</h3>
+        <p>idkbot samlar inte in personlig information som e-post, lösenord eller IP-adresser.</p>
+        <h3>3. Datarlagring</h3>
+        <p>Minimal data lagras endast för att hålla idkbot fungerande. Data kan återställas eller raderas när som helst.</p>
+        <h3>4. Borttagning av data</h3>
+        <p>Du kan begära radering eller ta bort idkbot från din server för att rensa inställningar.</p>
+        <h3>5. Uppdateringar</h3>
+        <p>Denna policy kan uppdateras när som helst. Större uppdateringar kommer att meddelas om möjligt.</p>
+      `,
+      pt: `
+        <h2>🔒 Política de Privacidade</h2>
+        <p><strong>Última atualização:</strong> 5 de setembro de 2025</p>
+        <h3>1. Dados Coletados</h3>
+        <ul>
+          <li><strong>Mensagens & Comandos:</strong> o idkbot pode processar temporariamente as mensagens/comandos que você envia para responder.</li>
+          <li><strong>IDs de Servidor/Canal:</strong> armazenados apenas se necessários para configurações.</li>
+          <li><strong>IDs de Usuário:</strong> podem ser registrados para moderação ou recursos de uso.</li>
+        </ul>
+        <h3>2. Dados Não Coletados</h3>
+        <p>idkbot não coleta informações pessoais como e-mails, senhas ou endereços IP.</p>
+        <h3>3. Armazenamento de Dados</h3>
+        <p>Dados mínimos são armazenados apenas para manter o idkbot funcionando. Eles podem ser redefinidos ou excluídos a qualquer momento.</p>
+        <h3>4. Remoção de Dados</h3>
+        <p>Você pode solicitar exclusão ou remover o idkbot do seu servidor para limpar configurações.</p>
+        <h3>5. Atualizações</h3>
+        <p>Esta política pode ser atualizada a qualquer momento. Atualizações importantes serão anunciadas se possível.</p>
+      `
+    };
+
+    const privacyContent = document.getElementById("privacy-content");
+    const langSelect = document.getElementById("language");
+
+    langSelect.addEventListener("change", () => {
+      const lang = langSelect.value;
+      privacyContent.innerHTML = privacyTexts[lang];
+    });
+  </script>
+</body>
 </html>
