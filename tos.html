@@ -7,30 +7,107 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>📜 Terms of Service – idkbot</h1>
-  <p><strong>Last updated:</strong> September 5, 2025</p>
-  <h2>1. Using idkbot</h2>
-  <ul>
-    <li>You must comply with <a href="https://discord.com/terms">Discord’s Terms of Service</a> and <a href="https://discord.com/guidelines">Community Guidelines</a>.</li>
-    <li>You must be at least 13 years old (or the minimum age allowed by your country).</li>
-    <li>Don’t use idkbot for illegal activities, harassment, spam, or anything that breaks Discord rules.</li>
-  </ul>
-
-  <h2>2. Availability</h2>
-  <p>idkbot is provided “as is.” Features may change, stop working, or be removed at any time.</p>
-
-  <h2>3. Liability</h2>
-  <p>I am not responsible for any damages, losses, or problems caused by using idkbot.</p>
-
-  <h2>4. Termination</h2>
-  <p>I reserve the right to block or ban users/servers from using idkbot if they abuse it or break these terms.</p>
-
-  <p><a href="index.html">⬅ Back to Home</a></p>
-</body>
+  <!-- Navbar -->
   <nav>
-  <a href="index.html">🏠 Home</a>
-  <a href="tos.html">📜 Terms of Service</a>
-  <a href="privacy.html">🔒 Privacy Policy</a>
-</nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="tos.html">📜 Terms of Service</a>
+    <a href="privacy.html">🔒 Privacy Policy</a>
+  </nav>
 
+  <!-- Glowing Logo -->
+  <header>
+    <h1 class="logo">idkbot</h1>
+  </header>
+
+  <!-- Language Selector -->
+  <div class="lang-select">
+    <label for="language">🌍 Language:</label>
+    <select id="language">
+      <option value="en" selected>English</option>
+      <option value="sv">Swedish</option>
+      <option value="pt">Brazilian Portuguese</option>
+    </select>
+  </div>
+
+  <!-- Main Content -->
+  <main id="tos-content">
+    <!-- English default -->
+    <h2>📜 Terms of Service</h2>
+    <p><strong>Last updated:</strong> September 5, 2025</p>
+    <h3>1. Using idkbot</h3>
+    <ul>
+      <li>You must comply with <a href="https://discord.com/terms">Discord’s Terms of Service</a> and <a href="https://discord.com/guidelines">Community Guidelines</a>.</li>
+      <li>You must be at least 13 years old (or the minimum age allowed by your country).</li>
+      <li>Don’t use idkbot for illegal activities, harassment, spam, or anything that breaks Discord rules.</li>
+    </ul>
+    <h3>2. Availability</h3>
+    <p>idkbot is provided “as is.” Features may change, stop working, or be removed at any time.</p>
+    <h3>3. Liability</h3>
+    <p>I am not responsible for any damages, losses, or problems caused by using idkbot.</p>
+    <h3>4. Termination</h3>
+    <p>I reserve the right to block or ban users/servers from using idkbot if they abuse it or break these terms.</p>
+  </main>
+
+  <!-- Language Switcher Script -->
+  <script>
+    const tosTexts = {
+      en: `
+        <h2>📜 Terms of Service</h2>
+        <p><strong>Last updated:</strong> September 5, 2025</p>
+        <h3>1. Using idkbot</h3>
+        <ul>
+          <li>You must comply with <a href="https://discord.com/terms">Discord’s Terms of Service</a> and <a href="https://discord.com/guidelines">Community Guidelines</a>.</li>
+          <li>You must be at least 13 years old (or the minimum age allowed by your country).</li>
+          <li>Don’t use idkbot for illegal activities, harassment, spam, or anything that breaks Discord rules.</li>
+        </ul>
+        <h3>2. Availability</h3>
+        <p>idkbot is provided “as is.” Features may change, stop working, or be removed at any time.</p>
+        <h3>3. Liability</h3>
+        <p>I am not responsible for any damages, losses, or problems caused by using idkbot.</p>
+        <h3>4. Termination</h3>
+        <p>I reserve the right to block or ban users/servers from using idkbot if they abuse it or break these terms.</p>
+      `,
+      sv: `
+        <h2>📜 Användarvillkor</h2>
+        <p><strong>Senast uppdaterad:</strong> 5 september 2025</p>
+        <h3>1. Använda idkbot</h3>
+        <ul>
+          <li>Du måste följa <a href="https://discord.com/terms">Discords användarvillkor</a> och <a href="https://discord.com/guidelines">community-riktlinjer</a>.</li>
+          <li>Du måste vara minst 13 år (eller den minimiålder som gäller i ditt land).</li>
+          <li>Använd inte idkbot för olagliga aktiviteter, trakasserier, spam eller något som bryter mot Discords regler.</li>
+        </ul>
+        <h3>2. Tillgänglighet</h3>
+        <p>idkbot tillhandahålls "som den är". Funktioner kan ändras, sluta fungera eller tas bort när som helst.</p>
+        <h3>3. Ansvar</h3>
+        <p>Jag är inte ansvarig för några skador, förluster eller problem som orsakas av att använda idkbot.</p>
+        <h3>4. Avslut</h3>
+        <p>Jag förbehåller mig rätten att blockera eller banna användare/servrar som missbrukar idkbot eller bryter mot dessa villkor.</p>
+      `,
+      pt: `
+        <h2>📜 Termos de Serviço</h2>
+        <p><strong>Última atualização:</strong> 5 de setembro de 2025</p>
+        <h3>1. Usando o idkbot</h3>
+        <ul>
+          <li>Você deve cumprir os <a href="https://discord.com/terms">Termos de Serviço do Discord</a> e as <a href="https://discord.com/guidelines">Diretrizes da Comunidade</a>.</li>
+          <li>Você deve ter pelo menos 13 anos (ou a idade mínima permitida em seu país).</li>
+          <li>Não use o idkbot para atividades ilegais, assédio, spam ou qualquer coisa que viole as regras do Discord.</li>
+        </ul>
+        <h3>2. Disponibilidade</h3>
+        <p>idkbot é fornecido "como está". Os recursos podem mudar, parar de funcionar ou ser removidos a qualquer momento.</p>
+        <h3>3. Responsabilidade</h3>
+        <p>Não sou responsável por quaisquer danos, perdas ou problemas causados pelo uso do idkbot.</p>
+        <h3>4. Encerramento</h3>
+        <p>Eu me reservo o direito de bloquear ou banir usuários/servidores que abusarem do idkbot ou violarem estes termos.</p>
+      `
+    };
+
+    const tosContent = document.getElementById("tos-content");
+    const langSelect = document.getElementById("language");
+
+    langSelect.addEventListener("change", () => {
+      const lang = langSelect.value;
+      tosContent.innerHTML = tosTexts[lang];
+    });
+  </script>
+</body>
 </html>
