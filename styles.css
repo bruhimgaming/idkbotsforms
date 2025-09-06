@@ -1,53 +1,39 @@
 /* Global dark mode */
 body {
-  background-color: #000000;   /* pure black background */
-  color: #ffffff;              /* white text */
+  background-color: #000000;
+  color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 20px;
+  padding: 100px 20px 20px; /* space for fixed nav */
+  text-align: center;
+}
+
+/* Glowing Logo */
+.logo {
+  font-size: 4rem;
+  color: #00ffcc;
+  text-shadow: 0 0 12px #00ffcc, 0 0 24px #00ffcc, 0 0 48px #00ffcc;
+  margin: 20px 0;
 }
 
 /* Headings */
 h1, h2 {
-  color: #00ffcc; /* neon cyan headings */
-  margin-bottom: 10px;
-}
-
-/* Links */
-a {
-  color: #ffcc00; /* yellow links */
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-  color: #ffffff;
-}
-
-/* Lists */
-ul {
-  list-style: square;
-  padding-left: 20px;
-}
-
-/* Box around main content */
-body > * {
-  max-width: 800px;
-  margin: auto;
-  background: #111111;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+  color: #00ffcc;
+  text-shadow: 0 0 8px #00ffcc, 0 0 16px #00ffcc, 0 0 24px #00ffcc;
 }
 
 /* Navigation bar */
 nav {
   background: #111111;
-  padding: 10px;
+  padding: 12px;
   text-align: center;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+  border-bottom: 2px solid #00ffcc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav a {
@@ -55,9 +41,47 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  color: #00ffcc;
+  text-shadow: 0 0 8px #00ffcc, 0 0 16px #00ffcc;
 }
 
-nav a:hover {
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #111111;
+  color: #ffcc00;
+  padding: 12px 20px;
+  margin: 10px;
+  border: 2px solid #00ffcc;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.4);
+}
+.btn:hover {
+  background: #00ffcc;
+  color: #000000;
+  box-shadow: 0 0 12px #00ffcc, 0 0 24px #00ffcc, 0 0 36px #00ffcc;
+}
+
+/* Language selector */
+.lang-select {
+  margin: 20px 0;
+}
+.lang-select label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #ffcc00;
+}
+select {
+  padding: 6px;
+  border-radius: 6px;
+  border: 2px solid #00ffcc;
+  background: #111111;
   color: #ffffff;
-  text-decoration: underline;
+  font-weight: bold;
 }
