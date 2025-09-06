@@ -7,17 +7,45 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to idkbot</h1>
-  <p>This is the official site for idkbot.</p>
-  <ul>
-    <li><a href="tos.html">📜 Terms of Service</a></li>
-    <li><a href="privacy.html">🔒 Privacy Policy</a></li>
-  </ul>
-</body>
-<nav>
-  <a href="index.html">🏠 Home</a>
-  <a href="tos.html">📜 Terms of Service</a>
-  <a href="privacy.html">🔒 Privacy Policy</a>
-</nav>
+  <!-- Navbar -->
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="tos.html">📜 Terms of Service</a>
+    <a href="privacy.html">🔒 Privacy Policy</a>
+  </nav>
 
-</html>
+  <!-- Glowing Logo -->
+  <header>
+    <h1 class="logo">idkbot</h1>
+  </header>
+
+  <!-- Language Selector -->
+  <div class="lang-select">
+    <label for="language">🌍 Language:</label>
+    <select id="language">
+      <option value="en" selected>English</option>
+      <option value="sv">Swedish</option>
+      <option value="pt">Brazilian Portuguese</option>
+    </select>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <p id="welcome-text">This is the official site for idkbot.</p>
+
+    <a href="https://discord.com/oauth2/authorize?client_id=YOUR_BOT_ID&scope=bot" class="btn">🤖 Invite idkbot</a>
+    <a href="https://discord.gg/YOURSUPPORTSERVER" class="btn">💬 Join Support Server</a>
+  </main>
+
+  <!-- Language Switcher Script -->
+  <script>
+    const texts = {
+      en: {
+        welcome: "This is the official site for idkbot.",
+        invite: "🤖 Invite idkbot",
+        support: "💬 Join Support Server"
+      },
+      sv: {
+        welcome: "Detta är den officiella sidan för idkbot.",
+        invite: "🤖 Bjud in idkbot",
+        support: "💬 Gå m
